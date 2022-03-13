@@ -21,7 +21,7 @@ public class SimUnitUnity : MonoBehaviour
 		
 		Material unitMaterial = MaterialsFactory.CreateDiffuseColor(unit.unitType.color);
 		
-		box.renderer.sharedMaterial = unitMaterial; 
+		box.GetComponent<Renderer>().sharedMaterial = unitMaterial; 
 	}
 }
 

@@ -14,7 +14,7 @@ public class SimPointUnity : MonoBehaviour
 		
 		p = GameObject.CreatePrimitive(PrimitiveType.Sphere).transform;
 		p.parent = transform;
-		p.renderer.sharedMaterial = MaterialsFactory.CreateDiffuseColor(0xFF0000);
+		p.GetComponent<Renderer>().sharedMaterial = MaterialsFactory.CreateDiffuseColor(0xFF0000);
 		
 		p.localPosition = point.worldPosition;
 	}

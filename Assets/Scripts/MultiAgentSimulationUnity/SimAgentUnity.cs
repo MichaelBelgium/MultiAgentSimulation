@@ -21,7 +21,7 @@ public class SimAgentUnity : MonoBehaviour
 		
 		Material unitMaterial = MaterialsFactory.CreateDiffuseColor(agent.agentType.color);
 		
-		sphere.renderer.sharedMaterial = unitMaterial; 
+		sphere.GetComponent<Renderer>().sharedMaterial = unitMaterial; 
 	}
 	
 	public void Update()

@@ -32,7 +32,7 @@ public class SimMapUnity : MonoBehaviour, ISimMapListener
 				goCube.transform.parent = transform;
 				goCube.transform.localScale = new Vector3(0.5f, scale, 0.5f);
 				goCube.transform.localPosition = new Vector3(pos.x, pos.y + scale * 0.5f, pos.z);
-				goCube.renderer.sharedMaterial = mapMaterial;
+				goCube.GetComponent<Renderer>().sharedMaterial = mapMaterial;
 				mapValues[y * map.sizeX + x] = goCube.transform;
 			}
 		}
