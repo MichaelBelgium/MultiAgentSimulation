@@ -31,9 +31,7 @@ public class TestCSG : MonoBehaviour
 	}
 	
 	private void Test2()
-	{
-		int resolution = 32;
-		
+	{		
 		float startTime = Time.realtimeSinceStartup;
 		
 		CSG cube1 = CSG.cube(new Vector3(0.5f, 0, 0), new Vector3(1, 1, 1), new CSGShared(1, 0, 0));
